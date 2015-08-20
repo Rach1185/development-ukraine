@@ -1,65 +1,114 @@
-*{
-	width:100%;
-	border:1px solid black;
-	-moz-box-sizing: border-box;
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
-}
-#container,ul,nav,body,html{
-	border:none;
-}
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-ul{
-	padding:0;
-	margin:0;
-}
+header, section, footer, aside, nav, article {
+	display: block;}
 
-#container{
-	width:90%;
-	margin:0 auto;
-}
-/*Navigation*/
-nav{
-	height:60px;
-}
-nav li{
-	width:15%;
-	height:40px;
-	float:left;
-	margin:10px;
-}
-nav li:first-child{
-	float:right;
-}
-.line{
-	height:7px;
-	width:60%;
-	margin:5px auto;
-	border-radius:5px;
-}
-
-/*Main content*/
-header+div{
-	height:400px;
-	margin:20px 0;
-	font-size: 24px;
+body {
 	color: blue;
-	text-align: center;
+	background-color: #f98f6;
+	background-image: url("..//img/crimea.jpg");
+	background-position: center;
+	font-family: Georgia, Times, Serif;
+	line-height: 1.4em;
+	margin: 0px;
 }
-#container>div+div,footer>div{
-	width:30%;
-	height:200px;
-	float:left;
-	margin:10px 1.5%;
+
+.wrapper {
+	width: 940px;
+	margin: 20px auto 20px auto;
+	border: 2px solid #000000;
+	background-color: white;
 }
-/*footer, also in line 53*/
-footer{
-	clear:left;
+
+header {
+	height:160px;
+	background-color: #03056B;
+	font: white;
+}
+
+h1 {
+	width: 940px;
+	height: 130px;
+	margin: 0px;
+	color: #E3DD84;
+}
+
+nav, footer {
+	clear: both;
+	color: #ffffff;
+	background-color: #E3DD84;
+	height: 30px;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 5px 0px 5px 30px;
+}
+
+nav li {
+	display: inline;
+	margin-right: 40px;
+}
+
+nav li a {
+	color: white;
+}
+
+nav li a:hover, nav li a.current {
+	color: #000000;
+}
+
+section.overview {
+	float: left;
+	width: 659px;
+	border-right: 1px solid #eeeeee;
+}
+
+article {
+	clear: both;
+	overflow: auto;
+	width: 100px;
+}
+
+hgroup {
+	margin-top: 40px;
+}
+
+aside {
+	width: 230px;
+	float: left;
+	padding: 0px 0px 0px 20px;
+}
+
+aside section a {
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid #eeeeee;
+}
+
+aside section a:hover {
+	color: #985d6a;
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+h2 {
+	margin: 10px 0px 5px 0px;
+	padding: 0px;
+}
+
+h3 {
+	margin: 0px 0px 10px 0px;
+	color: #03056B;
+}
+
+aside h2 {
+	padding: 30px 0px 10px 0px;
+	color: #03056B;
+}
+
+footer {
+	font-size: 80%;
+	padding: 7px 0px 0px 20px;
 }
