@@ -2,54 +2,70 @@
 <html lang="en">
 	<head>
     	<meta charset="utf-8">
-			<html lang="ru">
-    	<meta name="Developement in Ukraine" content="Aggregated Development Initiatives in Ukraine">
+    	<meta name="Forward Ukraine" content="Aggregated Development Initiatives in Ukraine">
     	<meta name="Ukraine" content="ukraine, international, development, projects">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="http://fonts.googleapis.com/css?family=Raleway:300|Open+Sans" rel="stylesheet" type="text/css">
-		<script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js"></script>
-		<link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css" rel="stylesheet" />
-		<title>Development in Ukraine</title>
+				<link href="https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.css" rel="stylesheet" />
 
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<title>Forward Ukraine</title>
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/css.css">
+		<link rel="stylesheet" media="(max-width: 768px)" href="mobile.css">
 	</head>
 	<body>
 		<div class="wrapper">
 			<header>
-				<h1>Development in Ukraine</h1>
-				<nav>
-					<ul>
-						<li><a href="#" class="current">Home</a></li>
-						<li><a href="#">About CIPE</a></li>
-						<li><a href="#">Collaboration</a></li>
-					</ul>
-				</nav>
-			</header>
+  			<nav role="navigation">
+    			<ul>
+      			<li class="navlink"><a href="#">Home</a></li>
+						<li class="navlink"><a href="#">Ukraine Today</a></li>
+      			<li id="heart-trigger" class="heart heart-trigger"><span class="fa-heart"></span></li>
+      			<li class="heart"><span class="fa fa-heart"></span></li>
+      			<li class="navlink"><a href="#">Working Together</a></li>
+      			<li class="navlink"><a href="#">Contact</a></li>
+    			</ul>
+			</nav>
+		<h1>Forward Ukraine</h1>
+		</header>
+		<!-- map design -->
+		<div id="wtf">
+				<div class="sidebar">
+					<div class="heading">
+						<h2>Initiatives</h2>
+					</div>
+					<div id="listing" class="listings">
+					</div>
+			</div>
+				<div id="map" class="map pad2">Map</div>
+		</div>
+			<!-- end map design -->
 			<section class="overview">
 				<article>
-							<p>Complementing efforts to support the development of a prosperous and stable Ukraine -- responding to the crisis in the East, helping the Government of Ukraine engage citizens in the reform process, and promoting national unity.</p>
-					<!-- map here? -->
-						<!-- <h2>Ukraine</h2> -->
-				</article>
+							<h2>A Stable &amp; Prosperous Ukraine</h2>
+							<p> Coming together for real change </p>
+ 				</article>
 			</section>
-			<aside>
+			<section class="links">
 				<nav>
 							<li><a href="#">Labor</a></li>
 							<li><a href="#">Social Policy</a></li>
 							<li><a href="#">Anti-Corruption</a></li>
 							<li><a href="#">Commerce and Trade</a></li>
 				</nav>
-
-				<a class="menu-toggle" href="#">Initiatives</a>
-					</aside>
+			</section>
 				<footer>
 						Copyright &copy Rachel Grossman
 				</footer>
-					<div class="overlay"></div>
-				</div> <!--.wrapper -->
+		</div>
+
+				<!--.wrapper -->
 				<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-				<script src="js/velocity.min.js"></script>
 				<script src="js/index.js"></script>
-			</body>
-			</html>
+				<script src="https://api.tiles.mapbox.com/mapbox.js/v2.2.0/mapbox.js"></script>
+				<script>
+				L.mapbox.accessToken = '<your access token here>';
+				  var map = L.mapbox.map('map', 'examples.map-i80bb8p3')
+				  .setView([38.909671288923, -77.034084142948], 13);
+					</script>
+		</body>
+	</html>
