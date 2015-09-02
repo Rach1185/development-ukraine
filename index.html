@@ -4,13 +4,10 @@
     	<meta charset="utf-8" />
     	<meta name="Forward Ukraine" content="Aggregated Development Initiatives in Ukraine">
     	<meta name="Ukraine" content="ukraine, international, development, projects">
-
-		<title>Forward Ukraine</title>\
-				<link rel="canonical" href="http://codepen.io/MyCarrera/pen/GpKwxO">
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-<!-- manually adding the animate css stylesheet -->
-				<link rel="stylesheet" href="css/animate.css">
+		<title>Forward Ukraine</title>
+			<link rel="canonical" href="http://codepen.io/MyCarrera/pen/GpKwxO">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/animate.css">
 		  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 			<link href="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css" rel="stylesheet" />
 		<!-- external CSS link -->
@@ -34,7 +31,7 @@
 		</header>
 		<section class="overview">
 			<article>
-							<p>Connecting partners for the best services and resources pouring into Ukraine.</p>
+							<h3>Connecting partners and organizations across all 24 oblasts</h3>
 					</article>
 		</section>
 		<section class="links">
@@ -47,26 +44,29 @@
 			</nav>
 		</section>
 		<!-- map design -->
-		<div class="sidebar">
 				<div class="sidebar">
 					<div class="heading">
 						<h1>Initiatives</h1>
 					</div>
 					<div id="listings" class="listings"></div>
 				</div>
-				<div id="map" class="map"></div>
+
+				<div id="map" class="map pad2">Map</div>
+
 			<!-- end map design -->
 
 			<section class="overview">
 				<article>
-							<h3> Coming together for a stable &amp; prosperous Ukraine </h3>
+						<h3> Working together for a stable &amp; prosperous Ukraine </h3>
 				</article>
 			</section>
-				<footer>
-						Copyright &copy Rachel Grossman
-				</footer>
+			<footer>
+				&copy Rachel Grossman
+			</footer>
 		</div>
+
 				<!--.wrapper -->
+
 				<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 				<script src="js/index.js"></script>
 				<script src="https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js"></script>
@@ -75,7 +75,5 @@
 				  var map = L.mapbox.map('map', 'examples.map-i80bb8p3')
 				  .setView([38.909671288923, -77.034084142948], 13);
 					</script>
-
-			</div>
 		</body>
 	</html>
