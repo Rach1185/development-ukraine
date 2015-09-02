@@ -226,14 +226,17 @@ article h3 {
 		position: relative;
 		overflow: hidden;
 		width: 33.3333%;
-		border-right: 1px solid rgba(0,0,0,0.25);
+		height: 600px;
+		float: left;
+		border-right: 1px solid blue;
 		background-color: white;
 	}
 
 .map  {
 		postition: relative;
-		left:33.3333%;
+		float: right;
 	  width:66.6666%;
+		height: 600px;
 		background: #D5DB27;
 		}
 
@@ -246,11 +249,10 @@ article h3 {
 			}
 
 .listings {
-	height: 100%;
-	padding: 10px 0px 10px 0px;
+	padding:10px 10px 10px 10px;
 	width:33.3333%;
 	overflow: auto;
-	padding-bottom: 60px;
+	float: left;
 	background-color: pink;
 }
 .listings .item {
