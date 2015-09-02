@@ -240,9 +240,9 @@ article h3 {
 		background: #D5DB27;
 		}
 
-.pad2 {
+/*.pad2 {
 	  padding:20px;
-}
+}*/
 
 .quiet {
 		  color: pink;
@@ -253,7 +253,7 @@ article h3 {
 	width:33.3333%;
 	overflow: auto;
 	float: left;
-	background-color: pink;
+	background-color: #D5DB27;
 }
 .listings .item {
   display:block;
