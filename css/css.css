@@ -1,6 +1,6 @@
 
 body {
-	background-color: #D5DB27;
+	background-color: white;
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
 	line-height: 1.5em;
 	margin: 20px 0px 30px 0px;
@@ -233,7 +233,7 @@ article h3 {
 	}
 
 .map  {
-		postition: relative;
+		position: relative;
 		float: right;
 	  width:66.6666%;
 		height: 600px;
@@ -250,11 +250,10 @@ article h3 {
 
 .listings {
 	padding:10px 10px 10px 10px;
-	width:33.3333%;
+	width:100%;
 	overflow: auto;
-	float: left;
-	background-color: #D5DB27;
 }
+
 .listings .item {
   display:block;
   border-bottom:1px solid #eee;
