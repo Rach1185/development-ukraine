@@ -10,7 +10,7 @@ body {
 .wrapper {
 	width: 940px;
 	margin: 0 auto;
-	background-color: #D5DB27;
+	background-color: white;
 	border: 1px solid black;
 	}
 
@@ -25,7 +25,7 @@ header {
 	width: 100%;
 	height: 30%;
 	padding: 10px 0px 10px 0px;
-	background-color: #D5DB27;
+	background-color: white;
 	clear: both;
 }
 
@@ -224,7 +224,7 @@ article h3 {
 
 .sidebar {
 		position: relative;
-		overflow: hidden;
+		overflow: scroll;
 		width: 33.3333%;
 		height: 600px;
 		float: left;
@@ -245,7 +245,7 @@ article h3 {
 }*/
 
 .quiet {
-		  color: pink;
+		  color: blue;
 			}
 
 .listings {
@@ -260,10 +260,11 @@ article h3 {
   padding:10px;
   text-decoration:none;
 }
+
 .listings .item:last-child  { border-bottom:none; }
 .listings .item .title  {
   display:block;
-  color:green;
+  color: #0B0269;
   font-weight:700;
 }
 .listings .item .title small { font-weight:400; }
@@ -322,6 +323,12 @@ article h3 {
   padding:10px;
 }
 .leaflet-container .leaflet-marker-icon { cursor:pointer; }
+
+.leaflet-popup-scrolled {
+	overflow: auto;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
 /*end map*/
 
 footer {
