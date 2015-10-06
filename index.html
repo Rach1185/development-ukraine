@@ -19,11 +19,11 @@
   			<nav role="navigation">
     			<ul>
       			<li class="navlink"><a href="#">Home</a></li>
-						<li class="navlink"><a href="#">Ukraine Today</a></li>
+						<li class="navlink"><a href="today.html">Ukraine Today</a></li>
 						<li id="heart-trigger" class="heart heart-trigger"><span class="fa fa-heart"></span></li>
 						<li class="heart"><span class="fa fa-heart"></span>
 						</li>
-      			<li class="navlink"><a href="#">Working Together</a></li>
+      			<li class="navlink"><a href="together.html">Working Together</a></li>
       			<li class="navlink"><a href="#">Contact</a></li>
     			</ul>
 			</nav>
@@ -52,7 +52,7 @@
 				</div>
 
 				<div id="map" class="map pad2">Map</div>
-				
+
 
 			<!-- end map design -->
 
@@ -78,11 +78,8 @@
 	<script>
 	L.mapbox.accessToken = 'pk.eyJ1IjoicmFjaDExODUiLCJhIjoiY2QxMTY3YWQxYTBhZWQzMWNhNGRiNGQ1YzgzY2JmZTIifQ.fI9Dd2D2HPurXL43tOStyw';
 		var map = L.mapbox.map('map', 'examples.map-i80bb8p3')
-		.setView([38.909671288923, -77.034084142948], 13);
-		</script>
+		.setView([48.383022,31.1828699], 6);
 
-		<script>
-		L.mapbox.accessToken = '<pk.eyJ1IjoicmFjaDExODUiLCJhIjoiY2QxMTY3YWQxYTBhZWQzMWNhNGRiNGQ1YzgzY2JmZTIifQ.fI9Dd2D2HPurXL43tOStyw>';
 		var geojson = [
 
 		      {
@@ -100,7 +97,7 @@
 		            "properties": {
 		              "phoneFormatted": "(202) 234-7336",
 		              "phone": "2022347336",
-		              "address": "1471 P St NW",
+		              "address": "CIPE",
 		              "city": "Washington DC",
 		              "country": "United States",
 		              "crossStreet": "at 15th St NW",
