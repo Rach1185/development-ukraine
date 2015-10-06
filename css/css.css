@@ -224,7 +224,7 @@ article h3 {
 
 .sidebar {
 		position: relative;
-		overflow: hidden;
+		overflow: scroll;
 		width: 33.3333%;
 		height: 600px;
 		float: left;
@@ -260,6 +260,7 @@ article h3 {
   padding:10px;
   text-decoration:none;
 }
+
 .listings .item:last-child  { border-bottom:none; }
 .listings .item .title  {
   display:block;
@@ -322,6 +323,12 @@ article h3 {
   padding:10px;
 }
 .leaflet-container .leaflet-marker-icon { cursor:pointer; }
+
+.leaflet-popup-scrolled {
+	overflow: auto;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
 /*end map*/
 
 footer {
