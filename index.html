@@ -90,22 +90,23 @@
 		            "geometry": {
 		              "type": "Point",
 		              "coordinates": [
-		                -77.034084142948,
-		                38.909671288923
+		                50.440374,
+		                30.5245333
 		              ]
 		            },
 		            "properties": {
 									"organization": "Commercial Law Center",
 									"website":"http://www.commerciallaw.com.ua/en",
-									"projectName":"Commercial Law Reform Project"
-									"phoneFormatted": "(202) 234-7336",
-		              "phone": "2022347336",
-		              "address": "CIPE",
-		              "city": "Washington DC",
-		              "country": "United States",
-		              "crossStreet": "at 15th St NW",
-		              "postalCode": "20005",
-		              "state": "D.C."
+									"projectName":"Commercial Law Reform Project",
+									"phoneFormatted": "(+380 44) 490 6575",
+		              "phone": "380444906575",
+		              "funder": "Funder: USAID",
+									"projectDates": "Oct. 16, 2011 – Oct. 15, 2015",
+		              "city": "Kiev",
+		              "country": "Ukraine",
+		              "projectDescription": "The USAID Commercial Law Reform project is helping the Government of Ukraine draft laws and secondary legislation related to public-private partnerships, taxation, bankruptcy, registration of companies, and other areas critical to economic development. CLC was launched in 2003 as a legacy of previous USAID activities that helped the Government of Ukraine develop modern legislation and market-oriented policies to replace Soviet-style laws and outdated command economy regulations.",
+		              "postalCode": "01004",
+		              "oblast": "X"
 		            }
 		          },
 		          {
@@ -123,7 +124,7 @@
 		              "address": "2221 I St NW",
 		              "city": "Washington DC",
 		              "country": "United States",
-		              "crossStreet": "at 22nd St NW",
+		              "projectDescription": "at 22nd St NW",
 		              "postalCode": "20037",
 		              "state": "D.C."
 		            }
@@ -143,7 +144,7 @@
 		              "address": "1512 Connecticut Ave NW",
 		              "city": "Washington DC",
 		              "country": "United States",
-		              "crossStreet": "at Dupont Circle",
+		              "projectDescription": "at Dupont Circle",
 		              "postalCode": "20036",
 		              "state": "D.C."
 		            }
@@ -163,7 +164,7 @@
 		              "address": "3333 M St NW",
 		              "city": "Washington DC",
 		              "country": "United States",
-		              "crossStreet": "at 34th St NW",
+		              "projectDescription": "at 34th St NW",
 		              "postalCode": "20007",
 		              "state": "D.C."
 		            }
@@ -183,7 +184,7 @@
 		              "address": "221 Pennsylvania Ave SE",
 		              "city": "Washington DC",
 		              "country": "United States",
-		              "crossStreet": "btwn 2nd & 3rd Sts. SE",
+		              "projectDescription": "btwn 2nd & 3rd Sts. SE",
 		              "postalCode": "20003",
 		              "state": "D.C."
 		            }
@@ -240,7 +241,7 @@
 		              "address": "11935 Democracy Dr",
 		              "city": "Reston",
 		              "country": "United States",
-		              "crossStreet": "btw Explorer & Library",
+		              "projectDescription": "btw Explorer & Library",
 		              "postalCode": "20190",
 		              "state": "VA"
 		            }
@@ -260,7 +261,7 @@
 		              "address": "4075 Wilson Blvd",
 		              "city": "Arlington",
 		              "country": "United States",
-		              "crossStreet": "at N Randolph St.",
+		              "projectDescription": "at N Randolph St.",
 		              "postalCode": "22203",
 		              "state": "VA"
 		            }
@@ -318,7 +319,7 @@
 		              "address": "1901 L St. NW",
 		              "city": "Washington DC",
 		              "country": "United States",
-		              "crossStreet": "at 19th St",
+		              "projectDescription": "at 19th St",
 		              "postalCode": "20036",
 		              "state": "D.C."
 		            }
@@ -350,7 +351,7 @@
 		  var prop = locale.feature.properties;
 
 		  // Each marker on the map.
-		  var popup = '<h3>'  '</h3><div>' + prop.address;
+		  var popup = '<h3>'+ prop.projectName + '</h3><div>' + prop.projectDates;
 
 		  var listing = listings.appendChild(document.createElement('div'));
 		  listing.className = 'item';
@@ -359,10 +360,12 @@
 		  link.href = '#';
 		  link.className = 'title';
 
-		  link.innerHTML = prop.address;
-		  if (prop.crossStreet) {
-		    link.innerHTML += '<br /><small class="quiet">' + prop.crossStreet + '</small>';
-		    popup += '<br /><small class="quiet">' + prop.crossStreet + '</small>';
+		  link.innerHTML = prop.organization;
+		  if (prop.projectDescription) {
+		    link.innerHTML += '<br /><small class="quiet">' + prop.funder + '</small>';
+		    popup += '<br /><small class="quiet"> <a href="' + prop.website + '">Website</a></small>';
+				popup += '<br /><small class="description">' + prop.projectDescription + '</small>';
+				// popup += '<br /><small class="quiet">' + .prop.projectDescription + '</small>';
 		  }
 
 		  var details = listing.appendChild(document.createElement('div'));

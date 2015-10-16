@@ -244,6 +244,11 @@ article h3 {
 	  padding:20px;
 }*/
 
+.description {
+	font-size: 12px;
+	line-height: .5;
+}
+
 .quiet {
 		  color: blue;
 			}
