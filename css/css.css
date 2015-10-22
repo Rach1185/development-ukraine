@@ -199,7 +199,6 @@ article h3 {
 
 .links a:hover {
 	color: #D5DB27;
-	background-color: #0B0269;
 	transform: scale(1.1);
 	padding: 20px;
 }
@@ -220,6 +219,36 @@ article h3 {
 	height:60px;
  	line-height:40px;
  	padding: 10px 0px 5px 0px;
+}
+div {
+	position: relative;
+	width: 50%;
+	height: 30%;
+	padding: 10px 10px 10px 0px;
+	margin-left: 10px;
+	background-color: white;
+	clear: both;
+
+}
+div h4 {
+  color: #D5DB27;
+	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+	font-size: 30px;
+	height:30px;
+ 	line-height:40px;
+ 	padding: 10px 0px 5px 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+div p {
+	color: #0B0269;
+	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+	font-size: 16px;
+	line-height:20px;
+	padding: 10px 0px 5px 0px;
+	text-align: justify;
+
 }
 
 .sidebar {
