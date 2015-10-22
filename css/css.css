@@ -220,17 +220,12 @@ article h3 {
  	line-height:40px;
  	padding: 10px 0px 5px 0px;
 }
-div {
-	position: relative;
-	width: 50%;
-	height: 30%;
-	padding: 10px 10px 10px 0px;
-	margin-left: 10px;
-	background-color: white;
-	clear: both;
 
+.story {
+	width: 50%; 
 }
-div h4 {
+
+.story h4 {
   color: #D5DB27;
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
 	font-size: 30px;
@@ -241,7 +236,7 @@ div h4 {
 	text-transform: uppercase;
 }
 
-div p {
+.story p {
 	color: #0B0269;
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
 	font-size: 16px;
@@ -303,9 +298,9 @@ div p {
 }
 .listings .item .title small { font-weight:400; }
 .listings .item.active .title,
-.listings .item .title:hover { color:#8cc63f; }
+.listings .item .title:hover { color:#D5DB27; }
 .listings .item.active {
-  background-color:#f8f8f8;
+  background-color:#0B0269;
 }
 
 ::-webkit-scrollbar {
@@ -367,8 +362,7 @@ div p {
 
 footer {
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
-	color: black;
-	text-transform: uppercase;
+	color: #0B0269;
 	text-align: center;
 	padding: 20px 20px 20px 20px;
 }
