@@ -17,7 +17,9 @@
 	<body>
 		<div class="wrapper">
 			<header>
+					<h1>Forward Ukraine</h1>
   			<nav role="navigation">
+<<<<<<< HEAD
 					<ul>
 						<li><a href="index.html">Home</a></li>
 						<li><a href="today.html">Ukraine Today</a></li>
@@ -25,14 +27,20 @@
 						<li class="heart"><span class="fa fa-heart"></span></li>
 						<li><a href="together.html">Working Together</a></li>
 						<li><a href="#">Contact</a></li>
+=======
+    			<ul>
+      			<li class="navlink"><a href="index.html">Home</a></li>
+						<li class="navlink"><a href="today.html">Ukraine Today</a></li>
+						<li id="heart-trigger" class="heart heart-trigger"><span class="fa fa-heart"></span><a href="index.html"></a></li>
+						<li class="heart"><span class="fa fa-heart"></span>
+						</li>
+      			<li class="navlink"><a href="together.html">Working Together</a></li>
+      			<li class="navlink"><a href="about.html">About Us</a></li>
+>>>>>>> origin/gh-pages
     			</ul>
 			</nav>
-		<h1>Forward Ukraine</h1>
 		</header>
 		<section class="overview">
-			<article>
-							<h3>Connecting partners and organizations across all 24 oblasts</h3>
-					</article>
 		</section>
 		<!-- map design -->
 				<div class="sidebar">
@@ -58,11 +66,11 @@
 
 			<section class="overview">
 				<article>
-						<h3> Working together for a stable &amp; prosperous Ukraine </h3>
+									<h3>Connecting partners and organizations across all 24 oblasts</h3>
 				</article>
 			</section>
 			<footer>
-				&copy Rachel Grossman
+				&copy Forward Ukraine
 			</footer>
 		</div>
 
@@ -344,7 +352,7 @@
 		  var prop = locale.feature.properties;
 
 		  // Each marker on the map.
-		  var popup = '<h3>'+ '<a href class="' + prop.projectPage + '">' +prop.organization + '</a></h3><div>' + prop.projectName;
+		  var popup = '<h3>'+ '<a href class="' + prop.projectPage + '">' + prop.organization + '</a></h3><div>' + prop.projectName;
 
 		  var listing = listings.appendChild(document.createElement('div'));
 
