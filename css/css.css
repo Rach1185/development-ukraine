@@ -24,7 +24,7 @@ header {
 	position: relative;
 	width: 100%;
 	height: 200px;
-	padding: 40px 0px 10px 0px;
+	padding: 40px 0px 0px 0px;
 	background-color: white;
 	clear: both;
 }
@@ -151,19 +151,18 @@ nav ul a:hover {
 article {
 	margin: auto;
 	padding: 10px 0px 10px 0px;
-<<<<<<< HEAD
 	font-family: Futura,Trebuchet MS,Arial,sans-serif;
 	border-bottom: 1px solid #0B0269;
-=======
-	font-family: 'Source Sans Pro';
->>>>>>> origin/gh-pages
 }
 
 article h3 {
-	font-size: 20px;
+	font-size: 0.9em;
 	text-align: center;
 	text-transform: uppercase;
 	color: #0B0269;
+	font-family: 'Source Sans Pro';
+	letter-spacing: 3px;
+	font-weight: 300;
 }
 
 .links {
@@ -212,7 +211,7 @@ article h3 {
 .heading {
   background-color: white;
 	height:60px;
- 	padding:10px 10px 10px 10px;
+ 	padding:0px 10px 0px 10px;
 	clear: both;
 }
 
@@ -225,8 +224,13 @@ article h3 {
  	padding: 10px 0px 5px 0px;
 }
 
+.navigation {
+	border-bottom: 1px solid #eee;
+}
+
 .story {
 	width: 50%;
+	padding-left: 40px;
 }
 
 .story h4 {
@@ -359,21 +363,21 @@ article h3 {
   display:none;
 }
 .leaflet-popup-content {
-<<<<<<< HEAD
   font-weight:500;
 	font-family: 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
 	font-size: 15px;
   padding-left: 5px;
-=======
   font:400 15px/22px 'Garamond', Sans-serif;
   padding:0;
->>>>>>> origin/gh-pages
   width:400px;
+}
+
+.leaflet-container h3 {
+	font-size: 20px;
 }
 
 .leaflet-container a {
 	text-decoration: none;
-	font-size: 20px;
 	font-weight: 600;
 	color: #0B0269;
 }
