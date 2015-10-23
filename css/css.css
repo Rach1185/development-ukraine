@@ -232,6 +232,7 @@ article h3 {
 .story {
 	width: 50%;
 	padding-left: 40px;
+	float: left;
 }
 
 .story h4 {
@@ -252,6 +253,13 @@ article h3 {
 	line-height:20px;
 	padding: 10px 0px 5px 0px;
 	text-align: justify;
+}
+
+.image {
+	width: 40%;
+	padding: 140px 0px 5px 0px;
+	float: right;
+	clear: right;
 
 }
 
