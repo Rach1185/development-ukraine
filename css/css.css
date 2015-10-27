@@ -10,7 +10,6 @@ body {
 .wrapper {
 	width: 940px;
 	margin: 0 auto;
-	background-color: white;
 	}
 
 * {
@@ -24,9 +23,6 @@ header {
 	width: 100%;
 	height: 200px;
 	padding: 40px 0px 0px 0px;
-	background-color: white;
-	border-bottom: 1px solid #D5DB27;
-
 	clear: both;
 }
 
@@ -39,9 +35,52 @@ h1 {
 	font-weight: 400;
 	width: 100%;
 	height: 40%;
-	padding: 10px 0px 0px 0px;
 	margin: 0;
 	color: #0B0269;
+}
+
+h2 {
+  color:#0B0269;
+	font-family: Garamond,sans-serif;
+	font-style: italic;
+	font-size: 44px;
+	font-weight: 400;
+	text-align: center;
+	font-weight: 400;
+	width: 100%;
+	height: 40%;
+}
+
+
+h3 {
+font-size: 36px;
+font-style: italic;
+text-align: center;
+ color: #0B0269;
+ font-family: Garamond;
+ letter-spacing: 3px;
+ font-weight: 300;
+}
+
+h4 {
+  color: #0B0269;
+	font-style: italic;
+	font-family: Garamond;
+	font-size: 30px;
+	height:30px;
+ 	line-height:40px;
+ 	padding: 0px 0px 30px 0px;
+	text-align: center;
+}
+
+h5 {
+  color: #0B0269;
+	font-family: Garamond;
+	font-size: 24px;
+	height:30px;
+ 	line-height:40px;
+ 	padding: 0px 0px 30px 0px;
+	text-align: center;
 }
 
 nav ul {
@@ -69,10 +108,6 @@ nav ul {
 		-ms-flex-align: center;
 				align-items: center;
 }
-
-nav ul li {
-	display: none;
-	display: block;}
 
 nav ul a {
   display: block;
@@ -149,63 +184,6 @@ nav ul a:hover {
 	clear: both;
 }
 
-article {
-	margin: auto;
-	padding: 10px 0px 10px 0px;
-	font-family: Futura,Trebuchet MS,Arial,sans-serif;
-	border-bottom: 1px solid #0B0269;
-}
-
-article h3 {
-	font-size: 0.9em;
-	text-align: center;
-	text-transform: uppercase;
-	color: #0B0269;
-	font-family: 'Source Sans Pro';
-	letter-spacing: 3px;
-	font-weight: 300;
-}
-
-.links {
-	position: relative;
-	width: 100%;
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.links nav {
-	margin: auto;
-	text-align: center;
-	flex-direction: row;
-	display: flex;
-	border-top: 1px solid #0B0269;
-	border-bottom: 1px solid #0B0269;
-}
-
-.links nav li a {
-	display: inline;
-	text-decoration: none;
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #0B0269;
-	clear: both;
-}
-
-.links nav a {
-  letter-spacing: 3px;
-  color: #0B0269;
-  padding: 100px 30px;
-	clear: both;
-}
-
-.links a:hover {
-	color: #D5DB27;
-	transform: scale(1.1);
-	padding: 20px;
-}
 
 /*Mapbox*/
 
@@ -216,39 +194,11 @@ article h3 {
 	clear: both;
 }
 
-.heading h1 {
-  color: #D5DB27;
-	font-size: 30px;
-	background-color:#0B0269;
-	height:60px;
- 	line-height:40px;
- 	padding: 10px 0px 5px 0px;
-}
 
 .navigation {
 	border-bottom: 1px solid #eee;
 }
 
-h4 {
-  color: #D5DB27;
-	font-family: Garamond;
-	font-size: 30px;
-	height:30px;
- 	line-height:40px;
- 	padding: 0px 0px 30px 0px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-h5 {
-  color: #0B0269;
-	font-family: Garamond;
-	font-size: 24px;
-	height:30px;
- 	line-height:40px;
- 	padding: 0px 0px 30px 0px;
-	text-align: center;
-}
 
 .top {
 	width: 100%;
@@ -318,7 +268,7 @@ h5 {
 		float: right;
 	  width:66.6666%;
 		height: 600px;
-		background: #D5DB27;
+		background: white;
 		}
 
 /*.pad2 {
@@ -504,67 +454,30 @@ footer {
 
 //* Ukraine Today CSS*//
 
-.anticorruption{
-width: 50%;
-float: left;
-}
 
-.anticorruption h4 {
-	color: #D5DB27;
-	font-family: Garamond;
-	font-size: 30px;
-	height:30px;
-	line-height:40px;
-	padding: 0px 0px 30px 0px;
-	text-align: center;
-	text-transform: uppercase;
-}
+.anticorruption {
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	}
+
 
 .goodgovernance {
 	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
 	float: right;
+	}
 
-}
-
-.goodgovernance h4 {
-	color: #D5DB27;
-	font-family: Garamond;
-	font-size: 30px;
-	height:30px;
-	line-height:40px;
-	padding: 0px 0px 30px 0px;
-	text-align: center;
-	text-transform: uppercase;
-}
 
 .economicgrowth {
-	width: 50%;
+	width: 40%;
 	float: left;
 }
 
-.economicgrowth h4 {
-	color: #D5DB27;
-	font-family: Garamond;
-	font-size: 30px;
-	height:30px;
-	line-height:40px;
-	padding: 0px 0px 30px 0px;
-	text-align: center;
-	text-transform: uppercase;
-}
 
 .socialpolicy {
-	width: 50%;
+	width: 40%;
 	float: right;
-}
-
-.socialpolicy h4 {
-	color: #D5DB27;
-	font-family: Garamond;
-	font-size: 30px;
-	height:30px;
-	line-height:40px;
-	padding: 0px 0px 30px 0px;
-	text-align: center;
-	text-transform: uppercase;
 }
