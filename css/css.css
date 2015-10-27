@@ -35,7 +35,7 @@ h1 {
 	font-style: italic;
 	text-align: center;
 	/*z-index: 1;*/
-	font-size: 40px;
+	font-size: 60px;
 	font-weight: 400;
 	width: 100%;
 	height: 40%;
@@ -80,7 +80,7 @@ nav ul a {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: 'Source Sans Pro';
-  font-size: 0.9em;
+  font-size: 16px;
   color: #0B0269;
   text-align: center;
   padding: 14px 14px;
@@ -229,37 +229,78 @@ article h3 {
 	border-bottom: 1px solid #eee;
 }
 
-.story {
-	width: 50%;
-	padding-left: 40px;
-	float: left;
-}
-
-.story h4 {
+h4 {
   color: #D5DB27;
 	font-family: Garamond;
 	font-size: 30px;
 	height:30px;
  	line-height:40px;
- 	padding: 10px 0px 5px 0px;
+ 	padding: 0px 0px 30px 0px;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.story p {
+h5 {
+  color: #0B0269;
+	font-family: Garamond;
+	font-size: 24px;
+	height:30px;
+ 	line-height:40px;
+ 	padding: 0px 0px 30px 0px;
+	text-align: center;
+}
+
+.top {
+	width: 100%;
+	padding: 0px 0px 20px 0px;
+}
+
+.storyone {
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+}
+
+.storyone p {
 	color: #0B0269;
 	font-family: 'Source Sans Pro';
 	font-size: 16px;
 	line-height:20px;
-	padding: 10px 0px 5px 0px;
+	padding: 10px 10px 5px 0px;
 	text-align: justify;
 }
 
-.image {
-	width: 40%;
-	padding: 140px 0px 5px 0px;
+.storytwo {
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
 	float: right;
-	clear: right;
+}
+.storytwo p {
+	color: #0B0269;
+	font-family: 'Source Sans Pro';
+	font-size: 16px;
+	line-height:20px;
+	padding: 10px 0px 0px 0px;
+	text-align: justify;
+}
+
+.storythree {
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	clear: both;
+}
+
+.storythree p {
+	color: #D5DB27;
+	font-family: 'Source Sans Pro';
+	font-size: 20px;
+	line-height:20px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
 
 }
 
@@ -269,7 +310,6 @@ article h3 {
 		width: 33.3333%;
 		height: 600px;
 		float: left;
-		border-right: 1px solid blue;
 		background-color: white;
 	}
 
@@ -298,8 +338,10 @@ article h3 {
 }
 
 .chooseCategory {
-	font-family: 'Oxygen', sans-serif;
-	font-size: 14px;
+	font-family: 'Source Sans Pro';
+	color: #0B0269;
+	text-align: center;
+	font-size: 18px;
 	font-weight: 300;
 	display: block;
 }
@@ -319,8 +361,9 @@ article h3 {
 
 .nav a {
 	font-size: 25px;
-	color: #0B0269;
+	color: #D5DB27;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .listings .item {
@@ -334,12 +377,12 @@ article h3 {
 .listings .item:last-child  { border-bottom:none; }
 .listings .item .title  {
   display:block;
-  color: #0B0269;
+  color: #D5DB27;
   font-weight:700;
 }
 .listings .item .title small { font-weight:500; }
 .listings .item.active .title,
-.listings .item .title:hover { color: #0B0269; }
+.listings .item .title:hover { color: #D5DB27; }
 .listings .item.active {
   background-color:white;
 }
@@ -457,4 +500,71 @@ footer {
 		100% {
 			transform: scale(1.0);
 		}
+}
+
+//* Ukraine Today CSS*//
+
+.anticorruption{
+width: 50%;
+float: left;
+}
+
+.anticorruption h4 {
+	color: #D5DB27;
+	font-family: Garamond;
+	font-size: 30px;
+	height:30px;
+	line-height:40px;
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.goodgovernance {
+	width: 50%;
+	float: right;
+
+}
+
+.goodgovernance h4 {
+	color: #D5DB27;
+	font-family: Garamond;
+	font-size: 30px;
+	height:30px;
+	line-height:40px;
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.economicgrowth {
+	width: 50%;
+	float: left;
+}
+
+.economicgrowth h4 {
+	color: #D5DB27;
+	font-family: Garamond;
+	font-size: 30px;
+	height:30px;
+	line-height:40px;
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.socialpolicy {
+	width: 50%;
+	float: right;
+}
+
+.socialpolicy h4 {
+	color: #D5DB27;
+	font-family: Garamond;
+	font-size: 30px;
+	height:30px;
+	line-height:40px;
+	padding: 0px 0px 30px 0px;
+	text-align: center;
+	text-transform: uppercase;
 }
