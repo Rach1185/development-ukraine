@@ -10,8 +10,6 @@ body {
 .wrapper {
 	width: 940px;
 	margin: 0 auto;
-	background-color: white;
-	border: 1px solid black;
 	}
 
 * {
@@ -25,7 +23,6 @@ header {
 	width: 100%;
 	height: 200px;
 	padding: 40px 0px 0px 0px;
-	background-color: white;
 	clear: both;
 }
 
@@ -34,13 +31,56 @@ h1 {
 	font-style: italic;
 	text-align: center;
 	/*z-index: 1;*/
-	font-size: 40px;
+	font-size: 60px;
 	font-weight: 400;
 	width: 100%;
 	height: 40%;
-	padding: 10px 0px 0px 0px;
 	margin: 0;
 	color: #0B0269;
+}
+
+h2 {
+  color:#0B0269;
+	font-family: Garamond,sans-serif;
+	font-style: italic;
+	font-size: 44px;
+	font-weight: 400;
+	text-align: center;
+	font-weight: 400;
+	width: 100%;
+	height: 40%;
+}
+
+
+h3 {
+font-size: 36px;
+font-style: italic;
+text-align: center;
+ color: #0B0269;
+ font-family: Garamond;
+ letter-spacing: 3px;
+ font-weight: 300;
+}
+
+h4 {
+  color: #0B0269;
+	font-style: italic;
+	font-family: Garamond;
+	font-size: 30px;
+	height:30px;
+ 	line-height:40px;
+ 	padding: 0px 0px 30px 0px;
+	text-align: center;
+}
+
+h5 {
+  color: #0B0269;
+	font-family: Garamond;
+	font-size: 24px;
+	height:30px;
+ 	line-height:40px;
+ 	padding: 0px 0px 30px 0px;
+	text-align: center;
 }
 
 nav ul {
@@ -69,17 +109,13 @@ nav ul {
 				align-items: center;
 }
 
-nav ul li {
-	display: none;
-	display: block;}
-
 nav ul a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: 'Source Sans Pro';
-  font-size: 0.9em;
+  font-size: 16px;
   color: #0B0269;
   text-align: center;
   padding: 14px 14px;
@@ -132,7 +168,7 @@ nav ul a:hover {
 }
 
 .fa-heart:hover {
-	color: white;
+	color: #D5DB27;
 	font-size: 1.2em;
 	-webkit-transform: scale(1.3);
 	-ms-transform: scale(1.3);
@@ -141,70 +177,13 @@ nav ul a:hover {
 
 .overview {
 	position: relative;
-	font-family: Futura,Trebuchet MS,Arial,sans-serif;
+	font-family: Garamond;
 	width: 100%;
 	height: 40%;
 	padding: 5px 0px 5px 0px;
 	clear: both;
 }
 
-article {
-	margin: auto;
-	padding: 10px 0px 10px 0px;
-	font-family: Futura,Trebuchet MS,Arial,sans-serif;
-	border-bottom: 1px solid #0B0269;
-}
-
-article h3 {
-	font-size: 0.9em;
-	text-align: center;
-	text-transform: uppercase;
-	color: #0B0269;
-	font-family: 'Source Sans Pro';
-	letter-spacing: 3px;
-	font-weight: 300;
-}
-
-.links {
-	position: relative;
-	width: 100%;
-	list-style: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.links nav {
-	margin: auto;
-	text-align: center;
-	flex-direction: row;
-	display: flex;
-	border-top: 1px solid #0B0269;
-	border-bottom: 1px solid #0B0269;
-}
-
-.links nav li a {
-	display: inline;
-	text-decoration: none;
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #0B0269;
-	clear: both;
-}
-
-.links nav a {
-  letter-spacing: 3px;
-  color: #0B0269;
-  padding: 100px 30px;
-	clear: both;
-}
-
-.links a:hover {
-	color: #D5DB27;
-	transform: scale(1.1);
-	padding: 20px;
-}
 
 /*Mapbox*/
 
@@ -215,42 +194,63 @@ article h3 {
 	clear: both;
 }
 
-.heading h1 {
-  color: #D5DB27;
-	font-size: 30px;
-	background-color:#0B0269;
-	height:60px;
- 	line-height:40px;
- 	padding: 10px 0px 5px 0px;
-}
 
 .navigation {
 	border-bottom: 1px solid #eee;
 }
 
-.story {
+
+.top {
+	width: 100%;
+	padding: 0px 0px 20px 0px;
+}
+
+.storyone {
 	width: 50%;
-	padding-left: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
 }
 
-.story h4 {
-  color: #D5DB27;
-	font-family: Garamond;
-	font-size: 30px;
-	height:30px;
- 	line-height:40px;
- 	padding: 10px 0px 5px 0px;
-	text-align: center;
-	text-transform: uppercase;
-}
-
-.story p {
+.storyone p {
 	color: #0B0269;
 	font-family: 'Source Sans Pro';
 	font-size: 16px;
 	line-height:20px;
-	padding: 10px 0px 5px 0px;
+	padding: 10px 10px 5px 0px;
 	text-align: justify;
+}
+
+.storytwo {
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: right;
+}
+.storytwo p {
+	color: #0B0269;
+	font-family: 'Source Sans Pro';
+	font-size: 16px;
+	line-height:20px;
+	padding: 10px 0px 0px 0px;
+	text-align: justify;
+}
+
+.storythree {
+	width: 100%;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	clear: both;
+}
+
+.storythree p {
+	color: #D5DB27;
+	font-family: 'Source Sans Pro';
+	font-size: 20px;
+	line-height:20px;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
 
 }
 
@@ -260,16 +260,23 @@ article h3 {
 		width: 33.3333%;
 		height: 600px;
 		float: left;
-		border-right: 1px solid blue;
 		background-color: white;
 	}
+
+.project-sidebar {
+	position: relative;
+	width: 40.3333%;
+	float: left;
+	border: 1px;
+	border-color: #eee;
+}
 
 .map  {
 		position: relative;
 		float: right;
 	  width:66.6666%;
 		height: 600px;
-		background: #D5DB27;
+		background: white;
 		}
 
 /*.pad2 {
@@ -289,8 +296,10 @@ article h3 {
 }
 
 .chooseCategory {
-	font-family: 'Oxygen', sans-serif;
-	font-size: 14px;
+	font-family: 'Source Sans Pro';
+	color: #0B0269;
+	text-align: center;
+	font-size: 18px;
 	font-weight: 300;
 	display: block;
 }
@@ -310,8 +319,9 @@ article h3 {
 
 .nav a {
 	font-size: 25px;
-	color: #0B0269;
+	color: #D5DB27;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .listings .item {
@@ -325,12 +335,12 @@ article h3 {
 .listings .item:last-child  { border-bottom:none; }
 .listings .item .title  {
   display:block;
-  color: #0B0269;
+  color: #D5DB27;
   font-weight:700;
 }
 .listings .item .title small { font-weight:500; }
 .listings .item.active .title,
-.listings .item .title:hover { color: #0B0269; }
+.listings .item .title:hover { color: #D5DB27; }
 .listings .item.active {
   background-color:white;
 }
@@ -448,4 +458,34 @@ footer {
 		100% {
 			transform: scale(1.0);
 		}
+}
+
+//* Ukraine Today CSS*//
+
+
+.anticorruption {
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: left;
+	}
+
+
+.goodgovernance {
+	width: 50%;
+	padding-left: 20px;
+	padding-right: 20px;
+	float: right;
+	}
+
+
+.economicgrowth {
+	width: 40%;
+	float: left;
+}
+
+
+.socialpolicy {
+	width: 40%;
+	float: right;
 }
