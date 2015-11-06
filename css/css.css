@@ -267,8 +267,40 @@ nav ul a:hover {
 	position: relative;
 	width: 40.3333%;
 	float: left;
-	border: 1px;
-	border-color: #eee;
+	background-color: #eee;
+	padding: 13px;
+}
+
+main a {
+	text-decoration: none;
+	color: #D5DB27;
+	font-weight: 500;
+}
+
+.project-style {
+	font-family: Garamond,sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+
+.organization {
+	font-size: 24px;
+	color: #0B0269;
+	font-weight: 800;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: .5em;
+}
+
+.project-section {
+	width: 53%;
+	float: left;
+	margin-left: 5%;
+	padding-top: 20px;
+	background-color: #eee;
+	padding: 13px;
+	height: 346px;
 }
 
 .map  {
@@ -422,6 +454,7 @@ footer {
 	color: #0B0269;
 	text-align: center;
 	padding: 20px 20px 20px 20px;
+	float: right;
 }
 
 @-webkit-keyframes heartBounce {
