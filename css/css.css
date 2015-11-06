@@ -265,10 +265,61 @@ nav ul a:hover {
 
 .project-sidebar {
 	position: relative;
-	width: 40.3333%;
+	width: 70%;
+	float: right;
+	background-color: #eee;
+	padding: 13px;
+}
+
+main {
+	width: 100%;
+}
+
+main a {
+	text-decoration: none;
+	color: #D5DB27;
+	font-weight: 500;
+}
+
+main a:hover {
+	color: #0B0269;
+}
+
+.project-style {
+	font-family: Garamond,sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+
+.organization {
+	font-size: 24px;
+	color: #0B0269;
+	font-weight: 800;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: .5em;
+}
+
+.project-section {
+	width: 29%;
 	float: left;
-	border: 1px;
-	border-color: #eee;
+	padding-top: 20px;
+	background-color: #eee;
+	padding: 13px;
+}
+
+.project-page-section {
+	font-size: 20px;
+	color: #0B0269;
+	font-weight: 600;
+	-webkit-margin-before: .2em;
+	-webkit-margin-after: .2em;
+}
+
+.project-section ul {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: .2em;
 }
 
 .map  {
@@ -418,10 +469,12 @@ nav ul a:hover {
 /*end map*/
 
 footer {
+	width: 100%;
 	font-family: Garamond;
 	color: #0B0269;
 	text-align: center;
 	padding: 20px 20px 20px 20px;
+	float: right;
 }
 
 @-webkit-keyframes heartBounce {
