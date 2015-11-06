@@ -265,16 +265,24 @@ nav ul a:hover {
 
 .project-sidebar {
 	position: relative;
-	width: 40.3333%;
-	float: left;
+	width: 70%;
+	float: right;
 	background-color: #eee;
 	padding: 13px;
+}
+
+main {
+	width: 100%;
 }
 
 main a {
 	text-decoration: none;
 	color: #D5DB27;
 	font-weight: 500;
+}
+
+main a:hover {
+	color: #0B0269;
 }
 
 .project-style {
@@ -294,13 +302,24 @@ main a {
 }
 
 .project-section {
-	width: 53%;
+	width: 29%;
 	float: left;
-	margin-left: 5%;
 	padding-top: 20px;
 	background-color: #eee;
 	padding: 13px;
-	height: 346px;
+}
+
+.project-page-section {
+	font-size: 20px;
+	color: #0B0269;
+	font-weight: 600;
+	-webkit-margin-before: .2em;
+	-webkit-margin-after: .2em;
+}
+
+.project-section ul {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: .2em;
 }
 
 .map  {
@@ -450,6 +469,7 @@ main a {
 /*end map*/
 
 footer {
+	width: 100%;
 	font-family: Garamond;
 	color: #0B0269;
 	text-align: center;
