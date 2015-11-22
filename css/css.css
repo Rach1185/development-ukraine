@@ -62,11 +62,6 @@ text-align: center;
  letter-spacing: 3px;
  font-weight: 300;
 }
-.hiddenlink {
-	color: #0B0269;
-  text-decoration: none; /* to remove the underline */
-  cursor: text;
-}
 
 h4 {
   color: #0B0269;
@@ -373,12 +368,13 @@ main a:hover {
 	display: block;
 	text-align: center;
 }
-
+a {
+}
 .nav a {
 	font-size: 25px;
 	color: #0B0269;
+	font-family: Garamond,sans-serif;
 	text-decoration: none;
-	text-transform: uppercase;
 }
 
 .nav a:hover {
@@ -433,18 +429,16 @@ background-color:white;
 .leaflet-popup-close-button {
   display:none;
 }
-.leaflet-popup-content {
-  font-weight:500;
-  padding-left: 5px;
-	font:400 15px/22px 'Garamond', Sans-serif;
-  padding:0;
-  width:400px;
-	height: 300px
+.leaflet-popup-content div {
+	padding:10px 10px 10px 10px;
+  width:275px;
+	height: 400px;
+	background: white;
+
 }
 
 .leaflet-container h3 {
-	font:400 32px/22px 'Garamond', Sans-serif;
-
+	font:400 32px/32px 'Garamond', Sans-serif;
 }
 
 .leaflet-container a {
@@ -455,19 +449,17 @@ background-color:white;
 
 .leaflet-popup-content-wrapper {
   padding:0;
+	background-color: #0B0269;
+
 }
 .leaflet-popup-content h3 {
   background:#D5DB27;
-  color:#0B0269;
-  margin:0;
   display:block;
-  padding:10px;
-  border-radius:3px 3px 0 0;
   font-weight:700;
   margin-top:-15px;
 }
 .leaflet-popup-content {
-  padding:10px;
+  padding:10px 10px 10px 10px;
 }
 .leaflet-container .leaflet-marker-icon { cursor:pointer; }
 
