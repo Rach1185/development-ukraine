@@ -18,7 +18,7 @@
 	<body>
 		<div class="wrapper">
 			<header>
-					<h1>Forward Ukraine</h1>
+					<h1>Forward Ukrainee</h1>
   			<nav role="navigation">
 					<ul class="navigation">
 							<li class="navlink"><a href="about.html">About Us</a></li>						<li class="navlink"><a href="today.html">Ukraine Today</a></li>
@@ -30,28 +30,19 @@
 						</ul>
 			</nav>
 		</header>
-		<!-- map design -->
-				<div class="sidebar">
-					<div id="listings" class="listings">
-						<ul class="navLinks">
-							<li class="nav"><a href="anticorruption.html">Anti-Corruption</a></li>
-							<li class="nav"><a href="goodgovernance.html">Good Governance</a></li>
-							<li class="nav"><a href="economicgrowth.html">Economic Growth</a></li>
-							<li class="nav"><a href="socialpolicy.html">Social Policy</a></li>
-						</ul>
-					</div>
-				</div>
 
 				<div id="map" class="map pad2">Map</div>
 
-
-			<!-- end map design -->
-
-			<section class="overview">
-				<article>
-									<h3>Connecting partners and organizations across all 24 oblasts</h3>
-				</article>
-			</section>
+			<div class="categories">
+				<div id="listings" class="listings">
+					<ul class="navLinks">
+					<a href="anticorruption.html">Anti-Corruption</a>
+					<a href="goodgovernance.html">Good Governance</a>
+					<a href="economicgrowth.html">Economic Growth</a>
+					<a href="socialpolicy.html">Social Policy</a>
+					</ul>
+				</div>
+			</div>
 			<footer>
 				&copy Forward Ukraine
 			</footer>
@@ -379,6 +370,7 @@
 		    return false;
 		  };
 
+
 		  // Marker interaction
 		  locale.on('click', function(e) {
 		    // 1. center the map on the selected marker.
@@ -390,6 +382,7 @@
 
 		  popup += '</div>';
 		  locale.bindPopup(popup);
+
 		});
 
 
